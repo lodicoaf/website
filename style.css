@@ -18,7 +18,8 @@ p, ul {font-size: 1.4rem;}
 
 body {
   display: block;
-  background-color: #FFFCF7;
+  background-image: url("cacti.png");
+  background-size: cover;
   font-family: 'Avenir Next', sans-serif;
   font-weight: 100;
   color: #4A4A4A;
@@ -33,7 +34,7 @@ h1, h2{
 
 .title {
   text-align: center;
-  text-shadow: 3px 3px 5px #C4CAD0;
+  /*text-shadow: 3px 3px 5px #F4F1DE;*/
   padding-top: 45%;
   padding-bottom: 5%;
 }
@@ -134,11 +135,11 @@ header {
 /* hover for nav */
 
 li.active a {
-  color: #C4BBAF !important;
+  color: #A19A90 !important;
   font-weight: 150;
 }
 li.active a.hvr-underline-from-center:before {
-  background: #C4BBAF;
+  background: #A19A90;
 }
 
 /* Underline on hover */
@@ -187,7 +188,7 @@ li.active a.hvr-underline-from-center:before {
 
 #about{
   padding: 3% 5%;
-  
+
 }
 
 #about h3{
@@ -367,6 +368,13 @@ figure:hover figcaption {
   opacity: 1;
   left: 0;
 }
+/* styles for Resume Page*/
+
+#resume main{
+  height: 1000px;
+}
+
+/* styles for Contact Page*/
 
 #contact .form-control {
   background-color: #eeead1;
