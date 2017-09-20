@@ -1,0 +1,451 @@
+/* clears settings */
+html, body, div {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: auto;
+  width: 100%;
+  background-image: url("pattern.png");
+  background-repeat: repeat;
+  font-size: 12px;
+}
+
+h1 {font-size: 5rem; margin: 0 auto;}
+h2 {font-size: 3rem;}
+h3 {font-size: 2rem;}
+h4 {font-size: 1.6rem;}
+p, ul {font-size: 1.4rem;}
+
+body {
+  display: block;
+  background-color: rgba(223,214,167,0);
+  font-family: 'Montserrat', sans-serif;
+  color: #706563;
+}
+
+/* Homepage Title */
+
+h1, h2{
+  color: #881600;
+}
+
+.title {
+  text-align: center;
+  text-shadow: 3px 3px 5px #c8963e;
+  padding-top: 45%;
+  padding-bottom: 5%;
+}
+
+/* Navigation */
+
+header {
+  margin: -35px 0 15px 0;
+  padding-top: 2.5%;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar #navigation {
+  height: 75px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.navbar #navigation ul{
+  list-style-type: none;
+  font-size: 2.5rem;
+  width: 100%;
+}
+
+.navbar #navigation li{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.navbar #navigation li a{
+  text-decoration: none;
+  display: block;
+  color: #585123;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: transparent;
+}
+
+.nav>li>a {
+    padding: 10px 0;
+}
+
+.navbar-default .navbar-toggle {
+    border: 2px solid #585123;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #585123;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+    border: 2px solid #c8963e;
+}
+
+.navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar{
+    background-color: #c8963e;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: none;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+@media screen and (min-width: 770px) {
+  #navbar {
+    border-color: transparent;
+    background-color: transparent;
+  }
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #a39171;
+    background-color: rgba(163,145,113,1);
+}
+
+.navbar-collapse {
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    border-top: none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+.navbar button {
+  margin-right: 28%;
+  margin-left: 42%;
+}
+
+/* hover for nav */
+
+li.active a {
+  color: #c8963e !important;
+}
+li.active a.hvr-underline-from-center:before {
+  background: #c8963e;
+}
+
+/* Underline on hover */
+
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #585123;
+  height: 3px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+/* Body background color excludes the homepage */
+
+.layer {
+  background-color: #dfd6a7;
+  padding: 25px 30px 0 30px;
+  border-top: 3px solid #c8963e;
+  border-bottom: 3px solid #c8963e;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles for about page */
+
+#about{
+  padding: 3% 5%;
+}
+
+#about h3{
+  color: #585123;
+}
+
+#about p{
+  padding: 1% 15% 1% 15%;
+}
+
+#about .row {
+  margin: 0 auto;
+  padding-left: 3%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+#about .row h3,p{
+  text-align: center;
+}
+
+#about .col-md-6 {
+  padding-bottom: 15px;
+}
+
+#info h2 {
+  padding: 0 15% 0 5%;
+}
+
+#info p{
+  text-align: left;
+  line-height: 1.5em;
+  padding: 1% 15% 3% 5%;
+}
+
+#about i {
+  color: rgba(163,145,113,1);
+  margin-left: 40%;
+}
+
+#about i:hover {
+  color: rgba(163,145,113,.5);
+}
+
+/* Float */
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+.resume {
+  text-align: center;
+}
+
+.resume a {
+  text-decoration: none;
+  color: rgba(88,81,35,1);
+}
+
+.resume h4 {
+  padding-bottom: .5%;
+}
+
+/* Styles for work page */
+
+/* Glow */
+.hvr-glow {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+#work{
+  padding: 4% 2% 1.5% 2%;
+}
+
+#work .panel-title {
+  color: #881600;
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 1% 0;
+}
+
+#work .panel-title a:hover {
+  text-decoration: none;
+}
+
+#work .panel-title.hvr-underline-from-center:before {
+  background: #881600;
+}
+
+
+#work .panel-title a:focus {
+  text-decoration: none;
+}
+
+#work .panel-heading {
+  padding: 1% 2%;
+  background-color: #dfd6a7;
+  text-align: center;
+}
+
+/*#work .panel-heading:hover {
+  background-color: #e7e0bc;
+}*/
+
+#work .panel {
+    border: none;
+    box-shadow: none;
+}
+
+#work .panel-body {
+  background-color: #eeead1;
+  border: none;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#work #sample img {
+  box-shadow: 0 0 5px #585123;
+  border-radius: 5px;
+}
+
+#work #sample a img:hover {
+  box-shadow: 0 0 20px #585123;
+  filter: opacity(.85);
+
+}
+
+#work #sample .row {
+  margin-left: 15%;
+}
+
+#work #sample #block {
+  padding: 2% 0;
+}
+
+figure {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-right: 85px;
+  box-shadow: 0 0 5px #585123;
+  border-radius: 5px;
+}
+
+.cap-bot figcaption { left: 0; bottom: -30%;}
+.cap-bot:hover figcaption { bottom: 0; }
+
+figcaption {
+  position: absolute;
+  background: rgba(88,81,35,.9);
+  color: #dfd6a7;
+  padding: 10px 20px;
+  opacity: 0;
+  bottom: 0;
+  left: -30%;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition:    all 0.6s ease;
+  -o-transition:      all 0.6s ease;
+  border-radius: 5px;
+}
+
+figure:hover {
+  box-shadow: 0 0 20px #585123;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+  left: 0;
+}
+
+#contact .form-control {
+  background-color: #eeead1;
+}
+
+#contact .form-control:focus {
+  box-shadow: inset 0 1px 1px rgba(131,131,131,.075),0 0 8px rgba(131,131,131,.6);
+  border: 1px solid rgba(163,145,113,.7);
+}
+
+#contact .btn-primary {
+  color: #585123;
+  background-color: #a39171;
+  border-color: #a39171;
+  margin-top: 5%;
+}
+
+#contact .btn-primary:hover {
+  color: #a39171;
+  background-color: #585123;
+  border-color: #585123;
+}
+
+#contact #contact-form {
+  padding: 5% 0 10% 0;
+}
+
+#contact #social {
+  padding: 5% 0 10% 0;
+  text-align: center;
+}
+
+#contact #social p {
+  text-align: left;
+  padding: 2% 5% 0 5%;
+}
+
+#contact #social a {
+  color: rgba(163,145,113,1);
+  padding: 5% 1% 0 1%;
+}
+
+#contact #social a:hover {
+  color: rgba(163,145,113,.5);
+}
+
+/* Styles for footer */
+
+footer {
+  margin: 4% 0;
+}
+
+/* Media Queries */
+@media screen and (min-width: 478px) {
+  html {font-size: 13px;}
+  .title {padding-top: 3%; margin: 18% 0 10% 0;}
+  #navigation li{float: left; padding: 0 5% 0 4%;}
+  h1{font-size: 6rem;}
+  #work #sample .row { margin-left: 10%; }
+}
+
+@media screen and (min-width: 768px) {
+  html {font-size: 14px;}
+  .title {padding-top: 15%; margin: 0 auto;  margin: -1% 0 10% 0; padding-bottom: 4%;}
+  #navigation li{float: left; padding: 0 8% 0 7%;}
+  h1{font-size: 8rem;}
+  #about .row { margin: 0 auto; padding-left: 7%; padding-bottom: 5%; padding-top: 5%;}
+  #about i { margin-left: 43%;}
+  #info h2 { padding: 0; }
+  #info p{ padding: 1% 20% 3% 0;}
+  #work #sample .row { margin-left: 3%; }
+  footer { margin: 2% 0 }
+}

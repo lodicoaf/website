@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="author" content="Alexanderia LoDico">
+    <meta name="description" content="This is a image gallery">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Search Title -->
+    <title> Olivia Image Gallery </title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Hind+Madurai:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+    <link rel="shortcut icon" href="pix/paw.png" />
+    <!-- Font Awesome Stylesheet -->
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css">
+    <!-- Boxslider Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="bxslider/bxslider.css" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Loads jQuery library via CDN -->
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+		<!-- Calls Boxslider Javascript file -->
+		<script src="bxslider/bxslider.min.js"></script>
+		<!-- Calls Boxslider Function -->
+		<script src="bxslider/slider.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Navigation Popout -->
+      <nav id="main-navigation" class="navigation">
+        <a href="#"><span class="x-mark">&#10006;</span></a>
+        <h3> Navigation </h3>
+        <ul class="">
+            <li><a href="#"> Gallery One </a></li>
+            <li><a href="#"> Gallery Two </a></li>
+            <li><a href="#"> Gallery Three </a></li>
+        </ul>
+      </nav>
+      <header class="icon-wrap">
+        <a href="#main-navigation"><span class="hamburger">&#9776; </span></a>
+      </header>
+      <section class="heading">
+        <!-- Box Slider -->
+        <div class="slide-container">
+          <ul class="bxslider">
+            <li><img src="pix/floor.png" title="Olivia Day One" alt="floor" /></li>
+            <li><img src="pix/chair.png" title="She thought she was sneaky" alt="chair" /></li>
+            <li><img src="pix/leaves.png" title="Can we go for a walk now?" alt="leaves" /></li>
+            <li><img src="pix/hat.png" title="My sister dressed her up for Cinco de Mayo" alt="hat" /></li>
+          </ul>
+        </div>
+        <!-- Title and info for Page -->
+        <div class="title">
+          <h1> Olive Oil </h1>
+          <p> Various images of my puppy Olivia </p>
+        </div>
+      </section>
+      <!-- Images -->
+      <section class="grid">
+        <div id="image1" class="panel">
+          <img src="pix/first.jpg" alt="firstday" onclick="onClick(this)" />
+          <p> The day we brought Olivia home </p>
+        </div>
+        <div id="image2" class="panel">
+          <img src="pix/nose.jpg" alt="nose" onclick="onClick(this)" />
+          <p> She loves to bite me </p>
+        </div>
+        <div id="image3" class="panel">
+          <img src="pix/ball.jpg" alt="ball" onclick="onClick(this)" />
+          <p> Olivia loves to be outside </p>
+        </div>
+        <div id="image4" class="panel">
+          <img src="pix/tall.jpg" alt="tall" onclick="onClick(this)" />
+          <p> Finally taller than the statue! </p>
+        </div>
+        <div id="image5" class="panel">
+          <img src="pix/model.jpg" alt="model" onclick="onClick(this)" />
+          <p> Olivia thinks she's a model </p>
+        </div>
+        <div id="image6" class="panel">
+          <img src="pix/stairs.jpg" alt="stairs" onclick="onClick(this)" />
+          <p> "Is it time for a walk?" </p>
+        </div>
+        <div id="image7" class="panel">
+          <img src="pix/kayak.jpg" alt="kayak" onclick="onClick(this)" />
+          <p> Olivia's first (and only) kayak run </p>
+        </div>
+        <div id="image8" class="panel">
+          <img src="pix/sleep.jpg" alt="sleep" onclick="onClick(this)" />
+          <p> Passed out after her first Christmas </p>
+        </div>
+        <div id="image9" class="panel">
+          <img src="pix/snow.jpg" alt="snow" onclick="onClick(this)" />
+          <p> Here she is modeling in the snow * </p>
+        </div>
+        <div id="image10" class="panel">
+          <img src="pix/chad.jpg" alt="flannel" onclick="onClick(this)" />
+          <p> My sister loves to dress her * </p>
+        </div>
+        <div id="image11" class="panel">
+          <img src="pix/rain.jpg" alt="rain" onclick="onClick(this)" />
+          <p> Maddie strikes again * </p>
+        </div>
+        <div id="image12" class="panel">
+          <img src="pix/camp.jpg" alt="camp" onclick="onClick(this)" />
+          <p> "You should share your sandwich" </p>
+        </div>
+      </section>
+      <div id="modal01" class="modal" onclick="this.style.display='none'">
+			  <span class="closebtn container">&times;</span>
+			  <div class="modal-content animate-zoom">
+			    <img id="img01" style="width:100%">
+			  </div>
+      </div>
+    </main>
+    <footer>
+      <p> &copy; Alexanderia LoDico, 2016 </p>
+      <div class="credit">
+        <p> * Credit to Maddie LoDico for the images </p>
+      </div>
+      <div class="social">
+        <p style="text-align: center; padding-top: 16px">
+          <a href="#"><i class="fa fa-facebook fa-lg"></i></a>&nbsp;
+          <a href="#"><i class="fa fa-instagram fa-lg"></i></a>&nbsp;
+          <a href="#"><i class="fa fa-snapchat-ghost fa-lg"></i></a>&nbsp;
+        </p>
+      </div>
+    </footer>
+    <script>
+			function onClick(element) {
+			  document.getElementById("img01").src = element.src;
+			  document.getElementById("modal01").style.display = "block";
+			}
+		</script>
+  </body>
+</html>
