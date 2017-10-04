@@ -193,30 +193,6 @@ li.active a.hvr-underline-from-center:before {
 
 #about{
   padding: 3% 5%;
-
-}
-
-#resume h3{
-  color: #89937C;
-}
-
-#about p{
-  padding: 1% 15% 1% 15%;
-}
-
-#resume .row {
-  margin: 0 auto;
-  padding-left: 3%;
-  padding-bottom: 5%;
-  padding-top: 5%;
-}
-
-#resume .row h3,p{
-  text-align: center;
-}
-
-#resume .col-md-6 {
-  padding-bottom: 15px;
 }
 
 #info h2 {
@@ -227,15 +203,6 @@ li.active a.hvr-underline-from-center:before {
   text-align: left;
   line-height: 1.5em;
   padding: 1% 15% 3% 5%;
-}
-
-#resume i {
-  color: #C4BBAF;
-  margin-left: 40%;
-}
-
-#resume i:hover {
-  color: #B3AAA0;
 }
 
 /* Float */
@@ -260,159 +227,54 @@ li.active a.hvr-underline-from-center:before {
 
 
 /* Styles for work page */
-
-/* Glow */
-.hvr-glow {
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow;
-  transition-property: box-shadow;
-}
-.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-}
-
 #work{
-  padding: 4% 2% 1.5% 2%;
-}
-
-#work .panel-title {
-  color: #881600;
-  text-align: center;
-  font-size: 2.2rem;
-  padding: 1% 0;
-}
-
-#work .panel-title a:hover {
-  text-decoration: none;
-}
-
-#work .panel-title.hvr-underline-from-center:before {
-  background: #881600;
-}
-
-
-#work .panel-title a:focus {
-  text-decoration: none;
-}
-
-#work .panel-heading {
-  padding: 1% 2%;
-  background-color: #dfd6a7;
-  text-align: center;
-}
-
-/*#work .panel-heading:hover {
-  background-color: #e7e0bc;
-}*/
-
-#work .panel {
-    border: none;
-    box-shadow: none;
-}
-
-#work .panel-body {
-  background-color: #eeead1;
-  border: none;
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-#work #sample img {
-  box-shadow: 0 0 5px #585123;
-  border-radius: 5px;
-}
-
-#work #sample a img:hover {
-  box-shadow: 0 0 20px #585123;
-  filter: opacity(.85);
-
-}
-
-#work #sample .row {
-  margin-left: 15%;
-}
-
-#work #sample #block {
-  padding: 2% 0;
-}
-
-figure {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  margin-right: 85px;
-  box-shadow: 0 0 5px #585123;
-  border-radius: 5px;
-}
-
-.cap-bot figcaption { left: 0; bottom: -30%;}
-.cap-bot:hover figcaption { bottom: 0; }
-
-figcaption {
-  position: absolute;
-  background: rgba(88,81,35,.9);
-  color: #dfd6a7;
-  padding: 10px 20px;
-  opacity: 0;
-  bottom: 0;
-  left: -30%;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition:    all 0.6s ease;
-  -o-transition:      all 0.6s ease;
-  border-radius: 5px;
-}
-
-figure:hover {
-  box-shadow: 0 0 20px #585123;
-}
-
-figure:hover figcaption {
-  opacity: 1;
-  left: 0;
-}
-/* styles for Resume Page*/
-
-#resume object {
-  height: 1000px;
-}
-
-#resume{
   padding: 3% 10%;
 }
 
-#resume h3{
+#work h3{
   color: #89937C;
 }
 
-#resume p{
+#work p{
+  padding: 1% 20% 1% 15%;
+}
+
+#work .col-lg-12 h3{
+  padding-right: 6%;
+}
+
+#work .col-lg-6 p{
   padding: 1% 15% 1% 15%;
 }
 
-#resume .row {
+#work .row {
   margin: 0 auto;
   padding-left: 3%;
   padding-bottom: 2%;
   padding-top: 5%;
 }
 
-#resume .row h3,p{
+#work .row h3,p{
   text-align: center;
 }
 
-#resume .col-md-6 {
+#work .col-lg-6 {
   padding-bottom: 15px;
 }
 
-#resume i {
+#work i {
   color: #C4BBAF;
   margin-left: 43%;
 }
 
-#resume i:hover {
+#work i:hover {
   color: #B3AAA0;
+}
+
+/* styles for Resume Page*/
+
+#resume object {
+  height: 1000px;
 }
 
 /* styles for Contact Page*/
@@ -474,7 +336,6 @@ footer {
   .title {padding-top: 3%; margin: 18% 0 10% 0;}
   #navigation li{float: left; padding: 0 3% 0 2%;}
   h1{font-size: 6rem;}
-  #work #sample .row { margin-left: 10%; }
 }
 
 @media screen and (min-width: 768px) {
@@ -483,9 +344,8 @@ footer {
   #navigation li{text-align: center; padding: 0 6% 0 5%;}
   h1{font-size: 8rem;}
   #about .row { margin: 0 auto; padding-left: 7%; padding-bottom: 5%; padding-top: 5%;}
-  #about i { margin-left: 43%;}
+  #work i { margin-left: 43%;}
   #info h2 { padding: 0; }
-  #info p{ padding: 1% 20% 3% 0;}
-  #work #sample .row { margin-left: 3%; }
+  #info p{ padding: 1% 15% 3% 0;}
   footer { margin: 2% 0 }
 }
