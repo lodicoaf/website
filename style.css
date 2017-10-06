@@ -187,6 +187,7 @@ li.active a.hvr-underline-from-center:before {
   /*border-top: 1px solid #89937C;
   border-bottom: 1px solid #89937C;*/
   box-shadow: 0 0 75px #C4BBAF;
+  height: 100%;
 }
 
 /* Styles for about page */
