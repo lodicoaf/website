@@ -206,6 +206,11 @@ li.active a.hvr-underline-from-center:before {
   padding: 1% 15% 3% 5%;
 }
 
+#headshot img{
+  height: 250px;
+
+}
+
 /* Float */
 
 .hvr-float {
@@ -281,7 +286,7 @@ li.active a.hvr-underline-from-center:before {
 /* styles for Contact Page*/
 
 #contact .form-control {
-  background-color: #eeead1;
+  background-color: #DEDCCA;
 }
 
 #contact .form-control:focus {
@@ -291,15 +296,15 @@ li.active a.hvr-underline-from-center:before {
 
 #contact .btn-primary {
   color: #585123;
-  background-color: #a39171;
-  border-color: #a39171;
+  background-color: #C9C1B6;
+  border-color: #C9C1B6;
   margin-top: 5%;
 }
 
 #contact .btn-primary:hover {
   color: #a39171;
-  background-color: #585123;
-  border-color: #585123;
+  background-color: #DEDCCA;
+  border-color: #DEDCCA;
 }
 
 #contact #contact-form {
