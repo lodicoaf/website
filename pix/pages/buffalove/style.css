@@ -1,0 +1,128 @@
+html{
+	background-color: #00345e;
+}
+
+/*-- Header Style --*/
+header {
+	text-align: center;
+}
+
+.main-header h1 {
+	font-family: 'Pacifico', cursive;
+	font-size: 86pt;
+	color: #c7b175;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.main-header h3 {
+	font-size: 20pt;
+	padding-bottom: 15px;
+	color: #e5dfcc;
+}
+
+.main-header img{
+	width: 100%;
+	height: auto;
+}
+
+/*-- Breakline Style --*/
+hr{
+	margin: 0 auto;
+	width: 95%;
+	border: 1px solid #c7b175;
+}
+
+/*-- Body Style --*/
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+main{
+	padding-top: 50px;
+	background-color: #00345e;
+	text-align: center;
+}
+
+main h1{
+	font-size: 32pt;
+	color: #c7b175;
+
+}
+
+main p{
+	font-size: 16pt;
+	color: #e5dfcc;
+	padding: 10px 50px 20px 50px;
+}
+
+main li{
+	color: #e5dfcc;
+	font-size: 16pt;
+	text-align: center;
+	list-style-type: none;
+	padding-bottom: 5px;
+}
+
+
+/*-- Section 1 Style --*/
+#activities{
+	background-color: #8c251c;
+	padding-top: 15px;
+	padding-bottom: 40px;
+}
+
+#activities img{
+	padding: 20px 20px 20px 20px;
+}
+
+/*-- Section 2 Style --*/
+#food{
+	padding-bottom: 30px;
+}
+
+/*-- Section 3 Style --*/
+#sports{
+	background-color: #e5dfcc;
+	padding-top: 15px;
+	padding-bottom: 50px;
+}
+
+#sports h1{
+	color: #333;
+}
+
+#sports p{
+	color: #333;
+}
+
+#sports img {
+	padding: 20px 10px 20px 10px;
+	width: 21%;
+}
+
+/*-- Social link Style --*/
+#social{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#social li{
+	display: inline;
+	list-style-type: none;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.social-nav ul li {
+  opacity: .75;
+}
+.social-nav ul li:hover {
+  opacity: 1;
+}
+
+/*-- Footer Style --*/
+footer{
+	text-align: center;
+}
