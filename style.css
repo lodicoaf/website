@@ -275,6 +275,21 @@ a:hover {
   text-decoration: none;
 }
 
+/* styles for work subpages */
+
+#crop {
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+#crop img {
+box-shadow: 0 0 10px #A19A90;
+}
+
+#crop figcaption{
+  text-align: center;
+}
+
 /* styles for Resume Page*/
 
 #resume object {
