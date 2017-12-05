@@ -88,7 +88,7 @@ header {
 }
 
 .navbar-default .navbar-toggle {
-    border: 1px solid #4A4A4A;
+    border: 1px solid #474448;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -97,11 +97,11 @@ header {
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: transparent;
-    border: 1px solid #c8963e;
+    border: 1px solid #89937C;
 }
 
 .navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar{
-    background-color: #c8963e;
+    background-color: #89937C;
 
 }
 
@@ -120,8 +120,8 @@ header {
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #a39171;
-    background-color: rgba(163,145,113,1);
+    border-color: #C9C1B6;
+    background-color: rgba(196,187,175,1);
 }
 
 .navbar-collapse {
@@ -374,17 +374,18 @@ footer {
 }
 
 /* Media Queries */
-@media screen and (min-width: 478px) {
+@media screen and (min-width: 400px) {
   html {font-size: 13px;}
   .title {padding-top: 3%; margin: 18% 0 10% 0;}
-  #navigation li{float: left; padding: 0 3% 0 2%;}
+  #navigation li{float: left; padding: 0 6% 0 3%;}
   h1{font-size: 6rem;}
+  #work i{margin-left: 36%;}
 }
 
 @media screen and (min-width: 768px) {
   html {font-size: 14px;}
   .title {padding-top: 15%; margin: 0 auto;  margin: -1% 0 10% 0; padding-bottom: 4%;}
-  #navigation li{text-align: center; padding: 0 6% 0 5%;}
+  #navigation li{text-align: center; padding: 0 5% 0 3%;}
   h1{font-size: 8rem;}
   #about .row { margin: 0 auto; padding-left: 7%; padding-bottom: 5%; padding-top: 5%;}
   #work i { margin-left: 43%;}
